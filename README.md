@@ -6,7 +6,7 @@
 * Installs Jetbrains' Hub on Ubuntu, Debian, RedHat, CentOS and REHL servers.
 
 ## Preview
-![screenshot](https://raw.githubusercontent.com/fubarhouse/ansible-role-hub/master/images/splash-screen.png)
+![screenshot](https://github.com/fubarhouse/ansible-role-jetbrains-hub/raw/master/images/splash-screen.png)
 
 ## Role Variables
 
