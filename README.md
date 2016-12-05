@@ -1,29 +1,27 @@
-# Ansible Role: YouTrack
+# Ansible Role: Hub
 
-[![Build Status](https://travis-ci.org/fubarhouse/ansible-role-youtrack.svg?branch=master)](https://travis-ci.org/fubarhouse/ansible-role-youtrack)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/fubarhouse/ansible-role-youtrack/master/LICENSE)
+[![Build Status](https://travis-ci.org/fubarhouse/ansible-role-hub.svg?branch=master)](https://travis-ci.org/fubarhouse/ansible-role-hub)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/fubarhouse/ansible-role-hub/master/LICENSE)
 
-* Installs Jetbrains' YouTrack on Ubuntu servers
+* Installs Jetbrains' Hub on Ubuntu, Debian, RedHat, CentOS and REHL servers.
 
 ## Preview
-![screenshot](https://raw.githubusercontent.com/fubarhouse/ansible-role-youtrack/master/images/login-screen.png)
+![screenshot](https://raw.githubusercontent.com/fubarhouse/ansible-role-hub/master/images/splash-screen.png)
 
 ## Role Variables
 
-    youtrack_domain: youtrack.vagrant.dev
-    youtrack_version: 7.0.27965
-    youtrack_webserver: nginx
+    hub_install_dir: /usr/local/hub
+    hub_domain: hub.vagrant.dev
+    hub_port: 8115
 
 ## Dependencies
 
-  None, but it requires Java to be installed properly as YouTrack is a Java application.
+* Java 1.8
 
 ## Installation
 
-  * Add the role to your playbook.
-  * Execute `ansible-galaxy install geerlingguy.java`
-  * Modify above variables as desired.
-  * Run your playbook, or `test.yml` from the tests folder.
+* Add the role to your playbook.
+* No special settings are required if the dependencies are met.
 
 ## License
 

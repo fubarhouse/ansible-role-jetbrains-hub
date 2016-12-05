@@ -25,6 +25,7 @@
   service:
     name: "{{ fubarhouse_webserver }}"
     state: restarted
+  when: fubarhouse_webserver is defined
 
 - name: "Hub | Apache vhost tasks"
   shell: "echo 'notify apache handler'"
