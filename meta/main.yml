@@ -1,0 +1,38 @@
+---
+galaxy_info:
+  author: Karl Hepworth
+  description: Installs hub, software from Jetbrains
+  license: MIT
+  min_ansible_version: 2.0.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  galaxy_tags:
+  - jetbrains
+  - team
+  - hub
+  - ubuntu
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+    - lucid
+    - maverick
+    - natty
+    - oneiric
+    - precise
+    - quantal
+    - raring
+    - saucy
+    - trusty
+    - utopic
+    - vivid
+    - wily
+  - name: Debian
+    versions:
+    - all
+  categories:
+  - development
+  - system
+  - web

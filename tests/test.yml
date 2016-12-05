@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  sudo: true
+  roles:
+    - geerlingguy.git
+    - fubarhouse.commons
+    - fubarhouse.curl
+    - role_under_test

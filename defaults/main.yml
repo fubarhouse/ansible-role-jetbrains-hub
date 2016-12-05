@@ -1,0 +1,17 @@
+---
+# defaults file for fubarhouse.jetbrains-hub
+
+hub_install_dir: /usr/local/hub
+hub_domain: hub.vagrant.dev
+hub_port: 8115
+
+# YouTrack
+
+hub_version: 2.5.450
+hub_webserver: nginx
+
+fubarhouse_vhosts:
+- name: hub
+  domain: "{{ hub_domain }}"
+  docroot: "{{ hub_install_dir }}"
+  port: "{{ hub_port }}"
