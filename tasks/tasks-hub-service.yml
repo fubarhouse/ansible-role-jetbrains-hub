@@ -9,7 +9,7 @@
 
 - name: "Hub | Service | Configure port"
   become: yes
-  become_user: root
+  become_user: "hub"
   shell: "{{ hub_install_dir }}/bin/hub.sh configure --listen-port={{ hub_port }} --base-url=http://localhost:{{ hub_port }}/"
 
 - name: "Hub | Service | Start"

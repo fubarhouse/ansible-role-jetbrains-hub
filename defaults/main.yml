@@ -1,6 +1,8 @@
 ---
 # defaults file for fubarhouse.jetbrains-hub
 
+ansible_ssh_pipelining: true
+
 hub_install_dir: /usr/local/hub
 hub_domain: hub.vagrant.dev
 hub_port: 8115

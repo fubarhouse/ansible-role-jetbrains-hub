@@ -16,6 +16,13 @@
     state: present
     group: hub
 
+- name: "Config | Escalate user privileges"
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%hub ALL=(ALL) NOPASSWD: ALL'
+
 - name: "Config | Create directories"
   become: yes
   become_user: root
