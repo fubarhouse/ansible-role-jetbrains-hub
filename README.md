@@ -13,6 +13,8 @@
     hub_install_dir: /usr/local/hub
     hub_domain: hub.vagrant.dev
     hub_port: 8115
+    hub_user: hub
+    hub_mode: 0777
 
 ## Dependencies
 
