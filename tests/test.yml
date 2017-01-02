@@ -3,6 +3,11 @@
 - hosts: all
   sudo: true
   pre_tasks:
+    - name: update apt cache
+      become: yes
+      become_user: root
+      shell: apt-get update
+      failed_when: false
     - name: install sudo
       package:
         name: sudo
