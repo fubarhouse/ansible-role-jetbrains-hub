@@ -2,6 +2,12 @@
 
 - hosts: all
   sudo: true
+  pre_tasks:
+    - name: install sudo
+      package:
+        name: sudo
+        state: present
+      failed_when: false
   roles:
     - geerlingguy.git
     - fubarhouse.commons
